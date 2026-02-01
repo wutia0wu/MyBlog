@@ -1,4 +1,4 @@
-baseURL = "https://yourdomain.com/"  # 部署后更新
+baseURL = "https://my-blog-six-taupe-57.vercel.app/"  # 部署后更新
 languageCode = "zh-cn"
 title = "我的博客"
 theme = "PaperMod"
