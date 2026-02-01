@@ -1,0 +1,47 @@
+baseURL = "https://yourdomain.com/"  # 部署后更新
+languageCode = "zh-cn"
+title = "我的博客"
+theme = "PaperMod"
+
+# 构建设置
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "Sapphire"
+  description = "个人博客"
+  defaultTheme = "auto"  # auto, light, dark
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "Welcome"
+  Content = "这是我的个人博客"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/wutia0wu"
+
+[menu]
+  [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 3
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
